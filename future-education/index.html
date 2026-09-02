@@ -1227,14 +1227,19 @@
 
 </style>
 <style>
-  [data-portfolio-back]{position:fixed;top:18px;left:18px;z-index:200;display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(12,14,18,.78);box-shadow:0 8px 28px rgba(0,0,0,.22);color:#fff;text-decoration:none;font:500 13px/1.2 "Noto Sans SC","Microsoft YaHei",sans-serif;letter-spacing:.02em;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);opacity:.82;transition:opacity .18s ease,transform .18s ease,border-color .18s ease}
-  [data-portfolio-back]:hover,[data-portfolio-back]:focus-visible{opacity:1;transform:translateY(-1px);border-color:rgba(255,255,255,.5);outline:none}
-  body.ppt-preview [data-portfolio-back],body.ppt-presenter [data-portfolio-back],body.ppt-audience [data-portfolio-back]{display:none}
-  @media(max-width:640px){[data-portfolio-back]{top:10px;left:10px;padding:8px 11px;font-size:12px}}
+  [data-portfolio-back],[data-report-link]{position:fixed;top:18px;z-index:200;display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border:1px solid rgba(255,255,255,.22);border-radius:999px;box-shadow:0 8px 28px rgba(0,0,0,.22);text-decoration:none;font:500 13px/1.2 "Noto Sans SC","Microsoft YaHei",sans-serif;letter-spacing:.02em;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:opacity .18s ease,transform .18s ease,border-color .18s ease}
+  [data-portfolio-back]{left:18px;background:rgba(12,14,18,.78);color:#fff;opacity:.82}
+  [data-report-link]{left:148px;border-color:#ffd500;background:#ffd500;color:#111;opacity:.96;font-weight:650}
+  [data-portfolio-back]:hover,[data-portfolio-back]:focus-visible,[data-report-link]:hover,[data-report-link]:focus-visible{opacity:1;transform:translateY(-1px);outline:none}
+  [data-portfolio-back]:hover,[data-portfolio-back]:focus-visible{border-color:rgba(255,255,255,.5)}
+  [data-report-link]:hover,[data-report-link]:focus-visible{border-color:#fff3a8}
+  body.ppt-preview [data-portfolio-back],body.ppt-presenter [data-portfolio-back],body.ppt-audience [data-portfolio-back],body.ppt-preview [data-report-link],body.ppt-presenter [data-report-link],body.ppt-audience [data-report-link]{display:none}
+  @media(max-width:640px){[data-portfolio-back],[data-report-link]{top:10px;padding:8px 11px;font-size:12px}[data-portfolio-back]{left:10px}[data-report-link]{left:auto;right:10px}}
 </style>
 </head>
 <body class="canvas-mode">
 <a data-portfolio-back href="../" aria-label="返回 AI 教育作品集首页">← 返回作品集</a>
+<a data-report-link href="../assets/reports/future-ai-education-platform-thoughts.pdf" target="_blank" rel="noopener" aria-label="在新窗口阅读未来 AI 教育平台完整思考 PDF">阅读完整思考 ↗</a>
 <script>
   // Windows 平台标记 — 雅黑没有 ExtraLight,需要字重补偿
   if(/Win/i.test(navigator.platform || navigator.userAgentData?.platform || '')){
