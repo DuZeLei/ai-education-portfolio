@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="杜泽垒｜元宝 AI 教育产品经理｜腾讯 2027 AI 产品经理培训生简历">
+  <link rel="canonical" href="https://duzelei.github.io/ai-education-portfolio/resume/">
+  <meta property="og:title" content="杜泽垒｜AI 教育产品经理简历">
+  <meta property="og:description" content="AI 教育产品、Agent Harness 与模型评测项目实践。">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://duzelei.github.io/ai-education-portfolio/resume/">
+  <meta property="og:image" content="https://duzelei.github.io/ai-education-portfolio/og.png">
+  <title>杜泽垒｜腾讯 AI 教育产品经理简历</title>
+  <style>
+    :root {
+      --ink: #132535;
+      --navy: #103754;
+      --blue: #137cad;
+      --cyan: #31b8d4;
+      --muted: #61717d;
+      --line: #d6e0e6;
+      --soft: #f3f7f9;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #e9eff3;
+      color: var(--ink);
+      font-family: "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    body { padding: 18px 0 34px; }
+
+    .page {
+      position: relative;
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: 10mm 12mm 9mm 15mm;
+      background: var(--paper);
+      box-shadow: 0 18px 48px rgba(20, 48, 67, 0.16);
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 3.2mm;
+      background: var(--navy);
+    }
+
+    .page::after {
+      content: "";
+      position: absolute;
+      inset: 0 auto auto 3.2mm;
+      width: 1.2mm;
+      height: 43mm;
+      background: var(--cyan);
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 23mm;
+      gap: 7mm;
+      align-items: end;
+      min-height: 30mm;
+      padding-bottom: 4.2mm;
+      border-bottom: 0.45mm solid var(--navy);
+    }
+
+    .eyebrow {
+      margin: 0 0 1.5mm;
+      color: var(--blue);
+      font-family: Arial, sans-serif;
+      font-size: 7.4pt;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      display: inline-block;
+      margin: 0;
+      color: var(--navy);
+      font-size: 25pt;
+      font-weight: 750;
+      line-height: 1;
+      letter-spacing: 0.08em;
+    }
+
+    .role {
+      display: inline-block;
+      margin-left: 4.2mm;
+      color: var(--ink);
+      font-size: 11.2pt;
+      font-weight: 650;
+      line-height: 1.25;
+      vertical-align: 1.2mm;
+    }
+
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1mm 3.2mm;
+      margin-top: 2.4mm;
+      color: var(--muted);
+      font-family: Arial, "Microsoft YaHei UI", sans-serif;
+      font-size: 8.2pt;
+      line-height: 1.35;
+    }
+
+    .contacts a { color: inherit; text-decoration: none; }
+
+    .contacts span + span::before,
+    .contacts span + a::before,
+    .contacts a + a::before {
+      content: "/";
+      margin-right: 3.2mm;
+      color: #9bacb7;
+    }
+
+    .portrait {
+      width: 23mm;
+      height: 29.5mm;
+      margin: 0;
+      padding: 0.7mm;
+      border: 0.35mm solid #b5c5ce;
+      background: #fff;
+    }
+
+    .portrait img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 38%;
+    }
+
+    .top-grid {
+      display: grid;
+      grid-template-columns: 1.55fr 1fr;
+      gap: 7mm;
+      margin-top: 5.2mm;
+      margin-bottom: 5.2mm;
+    }
+
+    .top-grid > section + section {
+      padding-left: 6mm;
+      border-left: 0.3mm solid var(--line);
+    }
+
+    .mini-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 2.2mm;
+      margin: 0 0 2mm;
+      color: var(--navy);
+      font-size: 10.4pt;
+      font-weight: 750;
+      line-height: 1.2;
+    }
+
+    .mini-heading .en {
+      color: var(--blue);
+      font-family: Arial, sans-serif;
+      font-size: 6.8pt;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .profile-points,
+    .research-points {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .profile-points li,
+    .research-points li {
+      position: relative;
+      padding-left: 3mm;
+      text-align: left;
+    }
+
+    .profile-points li::before,
+    .research-points li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 1.15mm;
+      height: 1.15mm;
+      background: var(--cyan);
+    }
+
+    .profile-points li {
+      margin-bottom: 1.05mm;
+      color: #344957;
+      font-size: 9.35pt;
+      line-height: 1.52;
+    }
+
+    .profile-points li::before { top: 1.65mm; }
+    .profile-points li:last-child,
+    .research-points li:last-child { margin-bottom: 0; }
+
+    .edu-row + .edu-row {
+      margin-top: 2.3mm;
+      padding-top: 2.3mm;
+      border-top: 0.25mm solid var(--line);
+    }
+
+    .edu-school {
+      margin: 0;
+      color: var(--navy);
+      font-size: 9.6pt;
+      font-weight: 750;
+      line-height: 1.3;
+    }
+
+    .edu-detail {
+      margin: 0.75mm 0 0;
+      color: #415561;
+      font-size: 8.65pt;
+      line-height: 1.5;
+    }
+
+    .edu-date {
+      color: var(--muted);
+      font-family: Arial, "Microsoft YaHei UI", sans-serif;
+      font-size: 8.05pt;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 9mm auto 1fr;
+      gap: 2.3mm;
+      align-items: center;
+      margin: 0;
+      color: var(--navy);
+    }
+
+    .section-no {
+      color: var(--cyan);
+      font-family: Arial, sans-serif;
+      font-size: 7.8pt;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+    }
+
+    .section-title {
+      font-size: 13.2pt;
+      font-weight: 750;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
+    }
+
+    .section-rule { height: 0.3mm; background: var(--line); }
+
+    .projects {
+      margin-top: 2.2mm;
+      border-bottom: 0.3mm solid var(--line);
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: 39mm minmax(0, 1fr);
+      gap: 5mm;
+      padding: 3.35mm 0 3.45mm;
+      border-top: 0.3mm solid var(--line);
+      break-inside: avoid;
+    }
+
+    .project:first-child { border-top-color: var(--navy); }
+
+    .project-index {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 5.2mm;
+      height: 5.2mm;
+      margin-bottom: 1.6mm;
+      color: #fff;
+      background: var(--blue);
+      font-family: Arial, sans-serif;
+      font-size: 7.3pt;
+      font-weight: 700;
+    }
+
+    .project-name {
+      margin: 0;
+      color: var(--navy);
+      font-size: 11.3pt;
+      font-weight: 750;
+      line-height: 1.28;
+    }
+
+    .project-name .en-name {
+      display: block;
+      margin-bottom: 0.6mm;
+      color: var(--blue);
+      font-family: Arial, sans-serif;
+      font-size: 7.8pt;
+      font-weight: 750;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .project-meta {
+      margin: 1.3mm 0 0;
+      color: var(--muted);
+      font-size: 8pt;
+      font-weight: 600;
+      line-height: 1.46;
+    }
+
+    .project ul { margin: 0; padding: 0; list-style: none; }
+
+    .project li {
+      position: relative;
+      margin: 0 0 1.35mm;
+      padding-left: 3mm;
+      color: #2f4451;
+      font-size: 9.15pt;
+      line-height: 1.52;
+      text-align: left;
+    }
+
+    .project li:last-child { margin-bottom: 0; }
+
+    .project li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 1.55mm;
+      width: 1.15mm;
+      height: 1.15mm;
+      background: var(--cyan);
+    }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1.18fr 1fr;
+      gap: 7mm;
+      margin-top: 5mm;
+    }
+
+    .bottom-grid > section {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+    }
+
+    .research {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin-top: 2.3mm;
+      padding: 3.4mm 4mm;
+      background: var(--soft);
+      border-left: 1mm solid var(--cyan);
+    }
+
+    .research-title {
+      margin: 0;
+      color: var(--navy);
+      font-size: 10.1pt;
+      font-weight: 750;
+      line-height: 1.3;
+    }
+
+    .research-points {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 1.5mm;
+    }
+
+    .research-points li {
+      margin-bottom: 1.1mm;
+      color: #354a57;
+      font-size: 8.9pt;
+      line-height: 1.5;
+    }
+
+    .research-points li::before { top: 1.55mm; }
+
+    .capabilities { margin-top: 2.3mm; }
+
+    .cap-row {
+      display: grid;
+      grid-template-columns: 22mm 1fr;
+      gap: 2mm;
+      padding: 1.8mm 0;
+      border-top: 0.25mm solid var(--line);
+    }
+
+    .cap-row:first-child { padding-top: 0; border-top: 0; }
+
+    .cap-label {
+      color: var(--blue);
+      font-size: 8.3pt;
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .cap-copy {
+      color: #3f535f;
+      font-size: 8.25pt;
+      line-height: 1.52;
+    }
+
+    .awards {
+      margin-top: 2.2mm;
+      padding-top: 2mm;
+      border-top: 0.35mm solid var(--navy);
+      color: #405460;
+      font-size: 8.1pt;
+      line-height: 1.5;
+    }
+
+    .awards strong { color: var(--navy); }
+
+    @media (max-width: 840px) {
+      body { padding: 0; background: #fff; }
+      .page {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 26px 24px 34px 34px;
+        box-shadow: none;
+      }
+      .header { grid-template-columns: 1fr 76px; }
+      .portrait { width: 76px; height: 98px; }
+      .role { display: block; margin: 8px 0 0; vertical-align: 0; }
+      .top-grid,
+      .bottom-grid { grid-template-columns: 1fr; }
+      .top-grid > section + section { padding: 0; border-left: 0; }
+      .project { grid-template-columns: 1fr; gap: 10px; }
+      .profile-points li,
+      .project li,
+      .research-points li,
+      .cap-copy { font-size: 14px; }
+    }
+
+    @media print {
+      @page { size: A4 portrait; margin: 0; }
+      html,
+      body { width: 210mm; height: 297mm; background: #fff; }
+      body { padding: 0; }
+      .page {
+        width: 210mm;
+        height: 297mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 10mm 12mm 9mm 15mm;
+        box-shadow: none;
+      }
+      .header { grid-template-columns: minmax(0, 1fr) 23mm; }
+      .portrait { width: 23mm; height: 29.5mm; }
+      .role {
+        display: inline-block;
+        margin: 0 0 0 4.2mm;
+        vertical-align: 1.2mm;
+      }
+      .top-grid { grid-template-columns: 1.55fr 1fr; }
+      .bottom-grid { grid-template-columns: 1.18fr 1fr; }
+      .top-grid > section + section {
+        padding-left: 6mm;
+        border-left: 0.3mm solid var(--line);
+      }
+      .project {
+        grid-template-columns: 39mm minmax(0, 1fr);
+        gap: 5mm;
+      }
+      .profile-points li { font-size: 9.35pt; }
+      .project li { font-size: 9.15pt; }
+      .research-points li { font-size: 8.9pt; }
+      .cap-copy { font-size: 8.25pt; }
+      *,
+      *::before,
+      *::after {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-label="杜泽垒的 AI 教育产品经理简历">
+    <header class="header">
+      <div>
+        <p class="eyebrow">AI Product · Education · Agent</p>
+        <div>
+          <h1>杜泽垒</h1>
+          <p class="role">元宝 AI 教育产品经理｜腾讯 2027 AI 产品经理培训生</p>
+        </div>
+        <div class="contacts" aria-label="联系方式">
+          <span>18485657978</span>
+          <a href="mailto:2437613181@qq.com">2437613181@qq.com</a>
+          <a href="https://duzelei.github.io/ai-education-portfolio/">duzelei.github.io/ai-education-portfolio</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="resume-assets/portrait.png" alt="杜泽垒肖像照">
+      </figure>
+    </header>
+
+    <div class="top-grid">
+      <section aria-labelledby="profile-heading">
+        <h2 class="mini-heading" id="profile-heading">个人概述 <span class="en">Profile</span></h2>
+        <ul class="profile-points">
+          <li>华南理工大学硕士在读，聚焦 AI 教育与 Agent 产品。</li>
+          <li>围绕课堂信息沉淀、个人学习管理与数学语音交互，完成 3 个可运行 Demo。</li>
+          <li>具备用户洞察、多模态交互、模型评测与 Agent Harness 实践能力；基于腾讯元宝及行业竞品研究，形成“可视化工具—AI 共创课程—个人学习闭环”的未来 AI 教育平台方案。</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="education-heading">
+        <h2 class="mini-heading" id="education-heading">教育背景 <span class="en">Education</span></h2>
+        <article class="edu-row">
+          <p class="edu-school">华南理工大学｜硕士</p>
+          <p class="edu-detail">交通信息工程及控制。<br><span class="edu-date">2024.09—至今｜预计 2027.06 毕业。</span></p>
+        </article>
+        <article class="edu-row">
+          <p class="edu-school">华南理工大学｜本科</p>
+          <p class="edu-detail">交通工程（智能交通方向）。<br><span class="edu-date">2020.09—2024.06。</span></p>
+        </article>
+      </section>
+    </div>
+
+    <section aria-labelledby="projects-heading">
+      <h2 class="section-heading" id="projects-heading">
+        <span class="section-no">01</span>
+        <span class="section-title">AI 教育产品与 Agent 实践</span>
+        <span class="section-rule"></span>
+      </h2>
+
+      <div class="projects">
+        <article class="project">
+          <div>
+            <span class="project-index">01</span>
+            <h3 class="project-name"><span class="en-name">Education</span>基于 Pi Agent 的个人 AI 学习库</h3>
+            <p class="project-meta">产品设计、Agent Harness 设计与独立开发。<br>2026.06—2026.08。</p>
+          </div>
+          <ul>
+            <li>针对 AI 精讲后内容难沉淀、“看懂”不等于掌握及多题之间缺少关联的问题，设计“单题讨论—人工确认—主动回顾—相似题分析—题组笔记”的长期学习闭环。</li>
+            <li>将任务拆分为 10 个原子工具，通过 Prompt、上下文、工具调用和工作流编排完成题目分析、回顾评价与相似题匹配；由文件系统负责确定性写入，避免模型直接修改正式资料。</li>
+            <li>在题目录入、相似题关联和跨题笔记保存等节点加入人工确认；完成可运行扩展及单题录入、主动回顾、相似题分析 3 段流程录屏，并设计保存率、回顾完成率和相似题确认率等验证指标。</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div>
+            <span class="project-index">02</span>
+            <h3 class="project-name"><span class="en-name">Pi Voice</span>数学场景上下文增强语音输入扩展</h3>
+            <p class="project-meta">多模态交互设计与独立开发。<br>2026.06—2026.08。</p>
+          </div>
+          <ul>
+            <li>针对数学公式键盘输入成本高、通用语音识别易误判公式与专业术语的问题，设计面向数学学习对话的语音输入扩展。</li>
+            <li>将口述内容依次完成语音识别、口语整理和数学表达转换，把“x 的平方”“根号二”等表达转化为可直接使用的数学符号与结构化文本。</li>
+            <li>从当前学习对话中动态提取知识点、公式名和专业术语，形成会话级热词并注入识别上下文；转写结果经用户确认后再发送，降低错误内容进入 Agent 推理链的风险。</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <div>
+            <span class="project-index">03</span>
+            <h3 class="project-name"><span class="en-name">TriNote</span>课堂原生多模态 AI 错题笔记系统</h3>
+            <p class="project-meta">产品方案与核心 AI 流程设计。<br>CVTE 极客π大赛｜2026.05。</p>
+          </div>
+          <ul>
+            <li>针对学生手工整理错题耗时、教师讲解难以沉淀的问题，融合课堂语音、板书图片和标准参考解，生成包含解题步骤、教师批注、易错点与考点的 A4 错题笔记网页。</li>
+            <li>设计由语音清洗、视觉解析、标答生成、多模态融合和结构化交付组成的 5 Agent 流水线，通过时间锚点对齐语音与板书，并使用 JSON Schema 约束模型输出。</li>
+            <li>坚持教师课堂信息为主要依据，标准解只用于补全和校准；在 3 人团队中用 10 天完成可运行 Demo，获得大赛三等奖及最佳创意奖。</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <div class="bottom-grid">
+      <section aria-labelledby="research-heading">
+        <h2 class="section-heading" id="research-heading">
+          <span class="section-no">02</span>
+          <span class="section-title">模型评测与产品研究</span>
+          <span class="section-rule"></span>
+        </h2>
+        <article class="research">
+          <h3 class="research-title">腾讯元宝 AI 精讲体验研究｜2026.08</h3>
+          <ul class="research-points">
+            <li>使用同一道数学题完成作业帮、豆包与元宝横向对比，并对元宝开展同题 5 次重复生成、长对话和多学科测试。</li>
+            <li>从准确性、稳定性、上下文保持和学习沉淀等维度整理 bad case，提出“可靠性—有效参与—长期学习闭环”的迭代优先级。</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="skills-heading">
+        <h2 class="section-heading" id="skills-heading">
+          <span class="section-no">03</span>
+          <span class="section-title">专业能力</span>
+          <span class="section-rule"></span>
+        </h2>
+        <div class="capabilities">
+          <div class="cap-row"><strong class="cap-label">AI 产品</strong><span class="cap-copy">教育用户洞察、需求拆解、多模态交互设计、产品方案设计与 Demo 原型落地。</span></div>
+          <div class="cap-row"><strong class="cap-label">Agent Harness</strong><span class="cap-copy">Prompt、上下文设计、工具调用、自然语言检索、结构化输出、工作流编排与人机确认。</span></div>
+          <div class="cap-row"><strong class="cap-label">模型评测</strong><span class="cap-copy">评测维度设计、同题重复生成测试、长上下文测试、bad case 梳理与优化建议。</span></div>
+        </div>
+        <p class="awards"><strong>其他奖项：</strong>全国大学生数学建模竞赛广东赛区二等奖；广州高校“互联网+交通运输”大赛二等奖。</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
