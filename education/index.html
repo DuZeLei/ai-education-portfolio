@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Education × Pi Voice：基于 Pi Agent 的个人 AI 学习库扩展，包含产品演示与三段功能录屏">
+  <meta property="og:title" content="Education × Pi Voice｜AI 学习库扩展">
+  <meta property="og:description" content="把一次 AI 精讲转化为可沉淀、可回顾、可关联的个人学习资产">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../og.png">
+  <title>Education × Pi Voice｜AI 学习库扩展</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-link" href="../" aria-label="返回作品集首页">← 返回作品集</a>
+    <nav aria-label="页面导航">
+      <a href="#overview">项目概览</a>
+      <a href="#deck">产品演示</a>
+      <a href="#demos">功能录屏</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="hero-copy">
+        <p class="eyebrow">PI AGENT EXTENSION · AI EDUCATION</p>
+        <h1>从 AI 精讲<br>到个人学习库</h1>
+        <p class="lead">Pi Voice 降低学生表达复杂思路的成本，Education 把交流结果转化为可搜索、可回顾、可关联的长期学习资产。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#demos">观看功能录屏</a>
+          <a class="button secondary" href="./deck/" target="_blank" rel="noopener">全屏打开演示 ↗</a>
+        </div>
+      </div>
+      <div class="hero-facts" aria-label="项目信息">
+        <article><span>02</span><p>协同扩展<br>Pi Voice + Education</p></article>
+        <article><span>03</span><p>核心场景<br>录入、回顾、关联</p></article>
+        <article><span>04</span><p>确认节点<br>用户保留最终控制权</p></article>
+      </div>
+    </section>
+
+    <section class="problem-strip" aria-label="产品问题">
+      <p>AI 精讲解决即时理解</p>
+      <span aria-hidden="true">→</span>
+      <p class="accent-copy">Education 继续解决长期掌握</p>
+    </section>
+
+    <section class="section" id="deck">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 · PRODUCT STORY</p>
+          <h2>完整产品演示</h2>
+        </div>
+        <p>13 页交互式 HTML 演示，介绍问题洞察、产品方案、学习闭环、信息模型与验证指标。可使用方向键翻页，按 P 打开演讲模式。</p>
+      </div>
+      <div class="deck-shell">
+        <iframe src="./deck/" title="Education × Pi Voice 产品演示" loading="lazy" allowfullscreen></iframe>
+      </div>
+      <div class="deck-foot">
+        <span>建议使用桌面端浏览完整交互</span>
+        <a href="./deck/" target="_blank" rel="noopener">在新窗口全屏打开 ↗</a>
+      </div>
+    </section>
+
+    <section class="section" id="demos">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">02 · WORKING PROTOTYPE</p>
+          <h2>三段功能录屏</h2>
+        </div>
+        <p>录屏来自基于 Pi Agent 桌面的扩展项目，按真实学习流程排列。面试时可依次观看，也可直接跳到关注的功能。</p>
+      </div>
+
+      <div class="demo-list">
+        <article class="demo-card">
+          <div class="demo-copy">
+            <p class="demo-index">DEMO 01 · CAPTURE</p>
+            <h3>单题录入</h3>
+            <p>学生提交题目并补充自己的思路，Agent 识别关键知识、核心转化与错误原因；结构化预览经确认后才进入正式学习库。</p>
+            <ul>
+              <li>保存理解过程，而不只是题目与答案</li>
+              <li>语音文字与正式资料均由学生确认</li>
+            </ul>
+          </div>
+          <div class="video-shell">
+            <video controls preload="metadata" playsinline>
+              <source src="https://github.com/DuZeLei/ai-education-portfolio/releases/download/demo-assets-v1/single-question-entry.mp4" type="video/mp4">
+              当前浏览器不支持 MP4 视频播放
+            </video>
+          </div>
+        </article>
+
+        <article class="demo-card">
+          <div class="demo-copy">
+            <p class="demo-index">DEMO 02 · RECALL</p>
+            <h3>主动回顾</h3>
+            <p>学生用自己的语言讲出关键知识、关键转化与关键公式。Agent 判断是否抓住决定解法的部分，并记录简洁的回顾事件。</p>
+            <ul>
+              <li>把“看过答案”转变为“能够讲出解法”</li>
+              <li>只在关键理解有误时要求重新说明</li>
+            </ul>
+          </div>
+          <div class="video-shell">
+            <video controls preload="metadata" playsinline>
+              <source src="https://github.com/DuZeLei/ai-education-portfolio/releases/download/demo-assets-v1/active-review.mp4" type="video/mp4">
+              当前浏览器不支持 MP4 视频播放
+            </video>
+          </div>
+        </article>
+
+        <article class="demo-card">
+          <div class="demo-copy">
+            <p class="demo-index">DEMO 03 · CONNECT</p>
+            <h3>相似题分析</h3>
+            <p>系统比较知识点、结构特征、关键转化与解题方法，由学生确认真正相关的题目，再共同沉淀跨题规律。</p>
+            <ul>
+              <li>相似不止是标题或关键词接近</li>
+              <li>从多道题中提炼可以迁移的解题模型</li>
+            </ul>
+          </div>
+          <div class="video-shell">
+            <video controls preload="metadata" playsinline>
+              <source src="https://github.com/DuZeLei/ai-education-portfolio/releases/download/demo-assets-v1/similar-question-analysis.mp4" type="video/mp4">
+              当前浏览器不支持 MP4 视频播放
+            </video>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">PRODUCT PRINCIPLE</p>
+      <h2>AI 负责整理、搜索与建议<br>学生保留最终决定权</h2>
+      <a class="button primary" href="../">继续浏览其他项目 →</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>杜泽垒 · AI 教育产品经理</span>
+    <span>Education × Pi Voice · Pi Agent Extension</span>
+  </footer>
+</body>
+</html>
